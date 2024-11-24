@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="icon" href="./assets/icon.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<body>
+    
+    <div class="main">
+        <div class="mainchild">
+
+            <div class="left">
+                <div class="leftchild">
+
+                    <div class="header">
+                        <h2>General Information</h2>
+                    </div>
+                    <div class="former">
+                        <form method="post" action="RegisterServlet" id="personalform">
+                            <div>
+                                <input type="text" name="username" placeholder="Username">
+                            </div>
+                            <div>
+                                <input type="text" name="rollnumber" placeholder="Rollnumber">
+                            </div>
+                            <div>
+                                <select name="dept">
+                                    <option value="">Department</option>
+                                    <option value="cse">CSE</option>
+                                    <option value="ece">ECE</option>
+                                    <option value="eee">EEE</option>
+                                    <option value="mech">MECH</option>
+                                    <option value="chem">CHEM</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select name="year">
+                                    <option value="">Year</option>
+                                    <option value="1">I</option>
+                                    <option value="2">II</option>
+                                    <option value="3">III</option>
+                                    <option value="4">IV</option>
+                                </select>
+                            </div>
+                            <div>
+                                <input type="text" name="section" placeholder="Section">
+                            </div>
+                            
+                            <div>
+                                <select name="gender">
+                                    <option value="">Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="others">Others</option>
+                                </select>
+                            </div>
+                            <div>
+                                <input type="submit" value="Submit">
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="rightchild">
+                    <div class="header">
+                        <h2>Contact Details</h2>
+                    </div>
+                    
+                    <div class="former">
+                        <form method="post" action="RegisterServlet" id="contactform">
+                            <div>
+                                <input type="text" name="street" placeholder="Street">
+                            </div>
+                            <div>
+                                <input type="text" name="area" placeholder="Area">
+                            </div>
+                            <div>
+                                <input type="text" name="city" placeholder="City">
+                            </div>
+                            <div>
+                                <input type="text" name="pincode" placeholder="Pincode">
+                            </div>
+                            <div>
+                                <input type="text" name="phone" placeholder="Phone number">
+                            </div>
+                            <div>
+                                <input type="text" name="email" placeholder="Email">
+                            </div>
+                            <div>
+                                <input type="submit" value="Submit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+
+</body>
+</html>
